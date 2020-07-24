@@ -1,12 +1,10 @@
 module.exports = ({ env }) => ({
-  //   email: {
-  //     provider: "sendgrid",
-  //     providerOptions: {
-  //       apiKey: env("SENDGRID_API_KEY"),
-  //     },
-  //     settings: {
-  //       defaultFrom: "juliasedefdjian@strapi.io",
-  //       defaultReplyTo: "juliasedefdjian@strapi.io",
-  //     },
-  //   },
+  graphql: {
+    endpoint: "/graphql",
+    tracing: false,
+    shadowCRUD: true,
+    playgroundAlways: true,
+    depthLimit: 7,
+    amountLimit: 50,
+  },
 });
