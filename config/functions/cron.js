@@ -13,7 +13,6 @@
 module.exports = {
   "* * * * * *": async () => {
     console.log("Cron every second");
-
     const send = await strapi.plugins["email"].services.email.send({
       to: "aceodnsjbphxavzelq@awdrt.com",
       from: "demo@strapi.io",
