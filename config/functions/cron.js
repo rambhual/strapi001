@@ -15,7 +15,7 @@ module.exports = {
     console.log("Cron every second");
 
     const send = await strapi.plugins["email"].services.email.send({
-      to: "aeyijqxusvloeorazf@awdrt.com",
+      to: "aceodnsjbphxavzelq@awdrt.com",
       from: "demo@strapi.io",
       replyTo: "demo@strapi.io",
       subject: "Sent from a cron",
