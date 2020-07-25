@@ -1,13 +1,16 @@
-'use strict';
+"use strict";
+const faker = require("faker");
 
-/**
- * An asynchronous bootstrap function that runs before
- * your application gets started.
- *
- * This gives you an opportunity to set up your data model,
- * run jobs, or perform some special logic.
- *
- * See more details here: https://strapi.io/documentation/v3.x/concepts/configurations.html#bootstrap
- */
-
-module.exports = () => {};
+module.exports = async () => {
+  // for (let index = 0; index < 4; index++) {
+  //   const result = await strapi.services.activity.create({
+  //     title: faker.commerce.productName(),
+  //     content: faker.lorem.sentences(),
+  //     active: true,
+  //     address: faker.address.streetAddress(),
+  //     city: faker.address.city(),
+  //     user: 1,
+  //   });
+  //   console.log(JSON.stringify(result, null, 4));
+  // }
+};
