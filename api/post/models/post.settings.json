@@ -12,11 +12,10 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "richtext"
-    },
-    "active": {
-      "type": "boolean"
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.paragraph"
     }
   }
 }

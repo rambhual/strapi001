@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tracks",
+  "info": {
+    "name": "track"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "artist": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "enumeration",
+      "enum": [
+        "House",
+        "Into",
+        "Out"
+      ]
+    },
+    "bpm": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "year": {
+      "type": "date"
+    },
+    "tracks": {
+      "type": "string"
+    },
+    "work": {
+      "type": "string"
+    }
+  }
+}

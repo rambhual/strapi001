@@ -2,7 +2,7 @@
 const faker = require("faker");
 
 module.exports = async () => {
-  // for (let index = 0; index < 4; index++) {
+  // for (let index = 0; index < 12; index++) {
   //   const result = await strapi.services.activity.create({
   //     title: faker.commerce.productName(),
   //     content: faker.lorem.sentences(),
