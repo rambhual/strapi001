@@ -1,4 +1,8 @@
-module.exports = ({ env }) => ({
+module.exports = {
+  cors: {
+    enabled: true,
+  },
+  //
   graphql: {
     endpoint: "/graphql",
     tracing: false,
@@ -7,4 +11,4 @@ module.exports = ({ env }) => ({
     depthLimit: 7,
     amountLimit: 50,
   },
-});
+};
