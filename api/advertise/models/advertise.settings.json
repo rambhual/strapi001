@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advertises",
+  "info": {
+    "name": "Advertise"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "stores": {
+      "via": "advertise",
+      "collection": "store"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "add_rotation_types",
+  "info": {
+    "name": "AddRotationType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "stores": {
+      "via": "add_rotation_type",
+      "collection": "store"
+    }
+  }
+}

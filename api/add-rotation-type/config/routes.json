@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/add-rotation-types",
+      "handler": "add-rotation-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/add-rotation-types/count",
+      "handler": "add-rotation-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/add-rotation-types/:id",
+      "handler": "add-rotation-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/add-rotation-types",
+      "handler": "add-rotation-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/add-rotation-types/:id",
+      "handler": "add-rotation-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/add-rotation-types/:id",
+      "handler": "add-rotation-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

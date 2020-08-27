@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stores",
+  "info": {
+    "name": "store"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "uploadsCanBeOriginalWorks": {
+      "type": "boolean"
+    },
+    "MediaType": {
+      "type": "enumeration",
+      "enum": [
+        "Audio",
+        "Video"
+      ]
+    },
+    "color": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "trackUploadQuota": {
+      "type": "integer"
+    },
+    "maxUploadCountPerAccountingPeriod": {
+      "type": "integer"
+    },
+    "ownerOffset": {
+      "type": "integer"
+    },
+    "apuEnabled": {
+      "type": "boolean"
+    },
+    "adRotationInterval": {
+      "type": "integer"
+    },
+    "advertise": {
+      "model": "advertise",
+      "via": "stores"
+    },
+    "add_rotation_type": {
+      "model": "add-rotation-type",
+      "via": "stores"
+    }
+  }
+}
